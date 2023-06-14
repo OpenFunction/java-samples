@@ -13,7 +13,7 @@
 创建函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/http-function.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/http-function.yaml
 ```
 
 访问函数
@@ -28,7 +28,7 @@ Hello, World!
 创建函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/function-front.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/function-front.yaml
 ```
 
 访问函数
@@ -64,7 +64,7 @@ plugin plugin-example:v1.0.0 exec post hook for http function at 2023-06-01 08:2
 创建函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/cloudevent-function.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/cloudevent-function.yaml
 ```
 
 访问函数
@@ -110,7 +110,7 @@ kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/mai
 创建函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/kafka-input.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/kafka-input.yaml
 ```
 
 向 `kafka` 中发送数据
@@ -144,7 +144,7 @@ curl -d '{"message":"Awesome OpenFunction!"}' -H "Content-Type: application/json
 创建函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/cron-input-kafka-output.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/cron-input-kafka-output.yaml
 ```
 
 查看函数日志
@@ -178,7 +178,7 @@ kubectl apply -f https://raw.githubusercontent.com/OpenFunction/samples/main/fun
 创建 subscribe 函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/function-subscriber.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/function-subscriber.yaml
 ```
 
 ## 读取配置
@@ -210,7 +210,7 @@ EOF
 部署 Function
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/get-config-from-file.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/get-config-from-file.yaml
 ```
 
 ### 从 configmap 读取配置
@@ -236,7 +236,7 @@ EOF
 部署 Function
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/get-config-from-configmap.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/get-config-from-configmap.yaml
 ```
 
 > 访问 k8s 资源需要创建对应的 servingaccount，role 和 rolebinding。
@@ -250,7 +250,7 @@ kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/mai
 部署 Function
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/function-aggregation.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/function-aggregation.yaml
 ```
 
 PS: 需要修改 function 的spec.serving.params 中的 FUNCTIONS 字段的值为实际的 function的访问地址
@@ -262,7 +262,7 @@ PS: 需要修改 function 的spec.serving.params 中的 FUNCTIONS 字段的值�
 部署 Function
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/redis-state-store.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/redis-state-store.yaml
 ```
 
 创建 state
@@ -317,7 +317,7 @@ delete 2 states
 部署 Function
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/mysql-state-store.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/mysql-state-store.yaml
 ```
 
 创建 state
@@ -372,7 +372,7 @@ delete 2 states
 部署 Function
 
 ```yaml
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/mysql-to-redis.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/mysql-to-redis.yaml
 ```
 
 PS：需要修改 mysql-to-redis.yaml 中以下环境变量
@@ -425,7 +425,7 @@ data:
 部署函数
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/main/src/main/resources/functions/file-read-write.yaml
+kubectl apply -f https://raw.githubusercontent.com/OpenFunction/java-samples/release-1.0/src/main/resources/functions/file-read-write.yaml
 ```
 
 创建文件

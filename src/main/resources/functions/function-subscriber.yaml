@@ -22,7 +22,7 @@ spec:
       # FUNC_GOPROXY: "https://goproxy.cn"
     srcRepo:
       url: "https://github.com/OpenFunction/java-samples.git"
-      revision: "main"
+      revision: "release-1.0"
   serving:
     runtime: "async"
     scaleOptions:

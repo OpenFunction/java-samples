@@ -16,7 +16,7 @@ spec:
       FUNCTION_FRAMEWORK_VERSION: "1.1.0"
     srcRepo:
       url: "https://github.com/OpenFunction/java-samples.git"
-      revision: "main"
+      revision: "release-1.0"
   serving:
     params:
       STATE_STORE_NAME: "redis-state-store"
