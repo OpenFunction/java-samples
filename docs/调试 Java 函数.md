@@ -79,6 +79,13 @@ java -Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=y -Dloa
 
 > **FUNC_CONTEXT** 定义了执行函数所需的参数。
 
+> Windows 系统下使用以下命令设置环境变量
+```
+set FUNCTION_CLASSPATH=target/java-samples-2.0-SNAPSHOT.jar;target/dependency/\*
+set FUNCTION_TARGET=dev.openfunction.samples.HttpFunctionImpl
+set FUNC_CONTEXT_V1BETA2={"name":"function-http-java","version":"v2.0.0","triggers":{"http":{"port":8080}}}
+```
+
 ### 启动调试
 
 为函数添加断点，启动上文中创建的 **Remote JVM Debug**
